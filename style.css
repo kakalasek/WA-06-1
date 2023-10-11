@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+}
+
+.content {
+  height: 100vh;
+  width: 100vw;
+}
+
+.content > div {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.header {
+  background-color: lightcoral;
+  height: 15vh;
+}
+
+.logo {
+  background-color: red;
+  float: left;
+  width: 6vw;
+  height: 8vh;
+}
+
+.navigation {
+  background-color: orange;
+  float: right;
+  width: 9vw;
+  height: 8vh;
+}
+
+.sidebar {
+  background-color: lightsalmon;
+  float: left;
+  width: 30vw;
+  height: 70vh;
+}
+
+.main {
+  background-color: lightblue;
+  float: left;
+  width: 70vw;
+  height: 70vh;
+}
+
+.footer {
+  background-color: lightgreen;
+  height: 15vh;
+  clear: both;
+}
