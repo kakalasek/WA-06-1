@@ -3,50 +3,43 @@ body {
 }
 
 .content {
-  height: 100vh;
-  width: 100vw;
+  display: grid;
+  grid-template: 15vh 70vh 15vh / 1fr 1fr 1fr;
 }
 
 .content > div {
-  box-sizing: border-box;
   padding: 20px;
 }
 
 .header {
   background-color: lightcoral;
-  height: 15vh;
+  grid-column-end: span 3;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header > div {
+  padding: 20px;
 }
 
 .logo {
   background-color: red;
-  float: left;
-  width: 6vw;
-  height: 8vh;
 }
 
 .navigation {
   background-color: orange;
-  float: right;
-  width: 9vw;
-  height: 8vh;
 }
 
 .sidebar {
   background-color: lightsalmon;
-  float: left;
-  width: 30vw;
-  height: 70vh;
 }
 
 .main {
   background-color: lightblue;
-  float: left;
-  width: 70vw;
-  height: 70vh;
+  grid-column-end: span 2;
 }
 
 .footer {
   background-color: lightgreen;
-  height: 15vh;
-  clear: both;
+  grid-column-end: span 3;
 }
